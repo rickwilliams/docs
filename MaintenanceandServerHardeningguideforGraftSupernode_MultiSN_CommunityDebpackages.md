@@ -320,6 +320,7 @@ Now we setup a hardlink to our supernode download folder called graftsupernode, 
 #### Hard linking Supernode
 
 ````
+cd
 ln -snf supernode.1.0.4.ubuntu-18.04.x64 graftsupernode
 ````
 
@@ -330,13 +331,13 @@ Note if you already have existing directories do not do the below,
 
 - Section 1 - Setting up from scratch
 ````
-cp -r ~/graftsupernode/config.ini ~/sn1/config.ini
+cp -rf ~/graftsupernode ~/sn1
 
-cp -r ~/graftsupernode/config.ini ~/sn2/config.ini
+cp -rf ~/graftsupernode ~/sn2
 
-cp -r ~/graftsupernode/config.ini ~/sn3/config.ini
+cp -rf ~/graftsupernode ~/sn3
 ````
-- **Create Our logs Folders**
+- **Create log folders for each**
 
 ````
 mkdir -p ~/sn1/logs
